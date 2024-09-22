@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div></div>
+  <div id="contenedor-pagina">
     <header id="header">
       <div class="logo">
         <img
-          id="header-img"
-          src="Img/beef-svgrepo.svg"
-          alt="Logotipo de cortes de carnes"
+        id="header-img"
+        src="Img/beef-svgrepo.svg"
+        alt="Logotipo de cortes de carnes"
         />
         <h1>La Casa del Filete</h1>
       </div>
@@ -22,54 +22,56 @@
           <li class="nav-link">
             <a href="#caracteristicas">Caracteristicas</a>
           </li>
-          <li class="nav-link"><a href="#funcion"></a>Como funciona</li>
-          <li class="nav-link"></li>
+          <li class="nav-link"><a href="#funciona">Como funciona</a></li>
+          <li class="nav-link"><a href="#Costos">Costo del producto</a></li>
         </ul>
       </nav>
-      <div class="container">
+    </header>
+    <br><br><br><br><br>
+    <div class="container">
+      <section id="formulario">
         <h2 class="subtitulo">EL mejor lugar de cortes de carne</h2>
         <section class="formulario">
           <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input
-              id="email"
-              type="email"
-              placeholder="Introduce-tu-email"
-              required
+            id="email"
+            type="email"
+            placeholder="Introduce-tu-email"
+            required
             />
             <input id="submit" type="submit" value="Enviar" class="boton" />
           </form>
         </section>
       </div>
-    </header>
-    <!-- Aqui estoy agrgando las caracteristicas de mi producto -->
-    <section class="especificaciones">
-      <div id="caracteristicas">
-        <div class="cards">
-          <div class="iconos">
-            <img src="Img/chef-.svg" class="asador" alt="esto es un asador " />
-          </div>
-          <div class="info">
-            <h2>Contamos con los mejores cortes de calidad</h2>
-            <p class="cortes">
-              Nuestros cortes son echos con las mejores tecnicas culinarias
-              gastronomicas de la epoca actual. Desde un punto de vista
-              culinario, existen muchos platos de carne gourmet, para los cuales
-              es necesario conocer a la perfección ciertos cortes de carne,
-              puesto que son una parte esencial de su preparación.
-            </p>
+      <!-- Aqui estoy agrgando las caracteristicas de mi producto -->
+      <section class="especificaciones">
+        <div id="caracteristicas">
+          <div class="cards">
+            <div class="iconos">
+              <img src="Img/chef-.svg" class="asador" alt="esto es un asador " />
+            </div>
+            <div class="info">
+              <h2>Contamos con los mejores cortes de calidad</h2>
+              <p class="cortes">
+                Nuestros cortes son echos con las mejores tecnicas culinarias
+                gastronomicas de la epoca actual. Desde un punto de vista
+                culinario, existen muchos platos de carne gourmet, para los cuales
+                es necesario conocer a la perfección ciertos cortes de carne,
+                puesto que son una parte esencial de su preparación.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Aqui se estan agregando los distintos cortes de carne con los que contam -->
-      <div id="caracteristicas">
-        <div class="cards">
-          <div class="iconos">
-            <img
+        <!-- Aqui se estan agregando los distintos cortes de carne con los que contam -->
+        <div id="caracteristicas">
+          <div class="cards">
+            <div class="iconos">
+              <img
               src="Img/asador-svg.svg"
               class="asador"
               alt="esto es un asador "
-            />
-          </div>
+              />
+            </div>
           <div class="info">
             <h2 id="tipos-carnes">Tipos de cortes</h2>
             <p class="cortes">
@@ -123,7 +125,64 @@
         </div>
       </div>
     </section>
-
-    <video id="video" src=""></video>
+    <section>
+      <div id="funciona">
+        <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/9JYhVnLwBq8?si=5Cl0TXsEnJduQR3V"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <br>
+    <section id="Costos">
+      <div class="producto">
+        <p>Filete T-Bone</p>
+        <h2>$500</h2>
+        <ol>
+          <li>elaborado a la parrilla</li>
+          <li>El grosor de este filete no debe sobrepasar los tres centímetros </li>
+          <li>es un corte que reúne dos piezas de carne suculentas</li>
+          <li>El corte se realiza de la parte baja del lomo de ganado vacuno. </li>
+        </ol>
+        <button class="btn">Seleccionar</button>
+      </div>
+      <div class="producto">
+        <p>Falda</p>
+        <h2>$600</h2>
+        <ol>
+          <li> Es largo, plano y apreciado por su sabor, más que por su ternura.</li>
+          <li>El filete de falda interior a menudo se confunde con el filete de flanco</li>
+          <li>se le conoce como entraña, en esos países por falda se refiere a la parte inferior de las costillas</li>
+          <li>La falda es el corte elegido para hacer fajitas, ranchera, salteado chino, churrasco, etc.</li>
+        </ol>
+        <button class="btn">Seleccionar</button>
+      </div>
+      <div class="producto">
+        <p> Rib Eye Steak </p>
+        <h2>$900</h2>
+        <ol>
+          <li>Este corte posee una gran cantidad de marmoleo adherido al músculo que lo hace especialmente tierno y de gran sabor</li>
+          <li>Este corte de carne proviene de la quinta a la décima primera vértebra del costillar de la res.</li>
+          <li>Se recomienda consumirse en cortes de 3/4 de pulgada en adelante</li>
+        </ol>
+        <button class="btn">Seleccionar</button>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#header">Privacidad</a></li>
+        <li><a href="#header">Terminos</a></li>
+        <span>Derechos de autor 2020, La Casa del Filete Originales</span>
+      </ul>
+    </footer>
+  </div>
   </body>
-</html>
+  </html>
+  

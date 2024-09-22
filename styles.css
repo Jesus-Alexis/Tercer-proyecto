@@ -3,6 +3,13 @@
     margin: 5px;
 }
 
+@media(max-width:600px){
+    #formaulario{
+        flex-wrap: wrap;
+    }
+}
+
+
  @media(max-width:650px){
      #nav-bar > ul{
        flex-direction: column;  
@@ -14,6 +21,17 @@
         padding-bottom: 5px;
     }
 }
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+}
+header {
+    position: absolute;
+    top: 0;
+    min-height: 75px;
+    display: flex;
+}
 
 #nav-bar > ul{
     width: 35vw;
@@ -21,6 +39,10 @@
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+}
+
+nav {
+    font-weight: 400;
 }
 
 li{
@@ -49,6 +71,7 @@ li{
 }
 
 a{
+    color: #000;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -115,6 +138,15 @@ h2{
     text-align: center;
 }
 
+#caracateristicas .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
 .iconos{
     display:flex;
     justify-content: center;
@@ -150,13 +182,88 @@ h2{
 font-size:20px;
 }
 
-
-#caracateristicas .info{
+#funciona{
+    margin-top: 50px;
     display: flex;
-    flex-direction: column;
+    box-sizing: border-box;
     justify-content: center;
-    height: 125px;
-    width: 80vw;
-    padding: 5px;
 }
 
+@media (max-width: 800px) {
+    #costos {
+        flex-direction: column;
+    }
+}
+ #Costos{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+ 
+ @media (max-width: 800px) {
+    .producto {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+ .producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+ }
+
+.producto > button{
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1690fcc;
+} 
+
+.btn{
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer{
+    display: block;
+    unicode-bidi: isolate;
+}
+footer {
+    margin-top: 30px;
+    background-color: #dddddd80;
+    padding: 20px;
+}
+
+
+footer > ul > li {
+    padding: 0 10px;
+}
+
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
