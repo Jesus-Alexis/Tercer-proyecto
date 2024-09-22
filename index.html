@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div></div>
     <header id="header">
       <div class="logo">
         <img
-        id="header-img"
-        src="Img/beef-svgrepo.svg"
-        alt="Logotipo de cortes de carnes"
+          id="header-img"
+          src="Img/beef-svgrepo.svg"
+          alt="Logotipo de cortes de carnes"
         />
         <h1>La Casa del Filete</h1>
       </div>
       <nav id="nav-bar">
         <ul>
-          <li class="nav-link"><a href="#caracteristicas">Caracteristicas</a></li>
-          <li class="nav-link"></li>
+          <li class="nav-link">
+            <a href="#caracteristicas">Caracteristicas</a>
+          </li>
+          <li class="nav-link"><a href="#funcion"></a>Como funciona</li>
           <li class="nav-link"></li>
         </ul>
       </nav>
-    </header>
-      <video id="video" src=""></video>
       <div class="container">
+        <h2 class="subtitulo">EL mejor lugar de cortes de carne</h2>
         <section class="formulario">
           <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input
@@ -37,79 +39,91 @@
             <input id="submit" type="submit" value="Enviar" class="boton" />
           </form>
         </section>
-         <!-- Aqui estoy agrgando las caracteristicas de mi producto -->
-        <div id="caracteristicas">
-          <div class="cards">
-            <div class="iconos">
-              <img
-              src="Img/chef-.svg"
-              class="asador"
-              alt="esto es un asador "
-              />
-            </div>
-            <div class="info">
-              <h2>Contamos con los mejores cortes de calidad</h2>
-              <p>Nuestros cortes son echos con las mejores tecnicas culinarias gastronomicas 
-                de la epoca actual. Desde un punto de vista culinario, existen muchos platos de 
-                carne gourmet, para los cuales es necesario conocer a la perfección ciertos cortes 
-                de carne, puesto que son una parte esencial de su preparación.
-              </p>
-            </div>
+      </div>
+    </header>
+    <!-- Aqui estoy agrgando las caracteristicas de mi producto -->
+    <section class="especificaciones">
+      <div id="caracteristicas">
+        <div class="cards">
+          <div class="iconos">
+            <img src="Img/chef-.svg" class="asador" alt="esto es un asador " />
+          </div>
+          <div class="info">
+            <h2>Contamos con los mejores cortes de calidad</h2>
+            <p class="cortes">
+              Nuestros cortes son echos con las mejores tecnicas culinarias
+              gastronomicas de la epoca actual. Desde un punto de vista
+              culinario, existen muchos platos de carne gourmet, para los cuales
+              es necesario conocer a la perfección ciertos cortes de carne,
+              puesto que son una parte esencial de su preparación.
+            </p>
           </div>
         </div>
-        <!-- Aqui se estan agregando los distintos cortes de carne con los que contam -->
-          <div id="caracteristicas">
-            <div class="cards">
-              <div class="iconos">
-                <img
+      </div>
+      <!-- Aqui se estan agregando los distintos cortes de carne con los que contam -->
+      <div id="caracteristicas">
+        <div class="cards">
+          <div class="iconos">
+            <img
               src="Img/asador-svg.svg"
               class="asador"
               alt="esto es un asador "
-              />
-            </div>
-            <div class="info">
-              <h2 id="tipos-carnes">Tipos de cortes de carne</h2>
-              <p>A continuación, se van a mencionar los diferentes 
-                cortes de carne que manejamos y 
-                sus características más importantes.</p>
-                <ul>
-                  <li>Filete T-Bone</li>
-                <p>El filete T-Bone es un tipo de corte de carne, que obtiene su nombre debido al hueso 
-                  con forma de T que lo caracteriza, el cual es encargado de separar el filete del lomo.
-                  Una de las características más importantes de este corte, es que permite que el filete 
-                  tenga un gusto suave, a diferencia del lomo, el cual tendrá una textura y sabor más fuertes.</p>
-                  <li>Falda</li>
-                <p>Este es uno de los tipos de corte de carne más clásicos. Proviene del diafragma, y 
-                  es uno de los cortes de mejor sabor. 
-                  Si se marina antes de prepararlo a la parrilla, se aprovecha mejor 
-                  la textura y los jugos, por lo que el sabor se ve potenciado.</p>
-                  <li>Rib Eye Steak</li>
-                  <p>. Es perfecto para los amantes de la carne suave, ya que se realiza desde la quinta hasta 
-                    la onceava vértebra de las costillas de ganado vacuno. Su punto negativo es que resulta 
-                  bastante grasiento, pero, para los amantes de esta porción, es algo que queda muy bien 
-                  compensado gracias a su exquisito sabor.</p>
-                </ul>
-              </div>
+            />
           </div>
-        </div>
-        <div id="caracteristicas">
-          <div class="cards">
-            <div class="iconos">
-              <img
-              src="Img/comida.svg"
-              class="asador"
-              alt="esto es un asador "
-              />
-            </div>
-            <div class="info">
-              <h2>Envios rápidos</h2>
-              <p>Contamos con envios a todo el pais. Nos asegurmos de que recibas 
-                tu corte de carne en perfecatas condiciones. Támbien se les ofrece
-                un regalo a aquellos clientes que compren más de 10 cortes en el 
-                año ofrecemos el cualquier corte de carne que quieras.
+          <div class="info">
+            <h2 id="tipos-carnes">Tipos de cortes</h2>
+            <p class="cortes">
+              A continuación, se van a mencionar los diferentes cortes de carne
+              que manejamos y sus características más importantes.
+            </p>
+            <ul>
+              <li class="tipos"><b>Filete T-Bone</b></li>
+              <p class="cortes">
+                El filete T-Bone es un tipo de corte de carne, que obtiene su
+                nombre debido al hueso con forma de T que lo caracteriza, el
+                cual es encargado de separar el filete del lomo. Una de las
+                características más importantes de este corte, es que permite
+                que el filete tenga un gusto suave, a diferencia del lomo, el
+                cual tendrá una textura y sabor más fuertes.
               </p>
-            </div>
+              <li class="tipos"><b>Falda</b></li>
+              <p class="cortes">
+                Este es uno de los tipos de corte de carne más clásicos.
+                Proviene del diafragma, y es uno de los cortes de mejor sabor.
+                Si se marina antes de prepararlo a la parrilla, se aprovecha
+                mejor la textura y los jugos, por lo que el sabor se ve
+                potenciado.
+              </p>
+              <li class="tipos"><b>Rib Eye Steak </b></li>
+              <p class="cortes">
+                . Es perfecto para los amantes de la carne suave, ya que se
+                realiza desde la quinta hasta la onceava vértebra de las
+                costillas de ganado vacuno. Su punto negativo es que resulta
+                bastante grasiento, pero, para los amantes de esta porción, es
+                algo que queda muy bien compensado gracias a su exquisito sabor.
+              </p>
+            </ul>
           </div>
         </div>
-   </body>
+      </div>
+      <div id="caracteristicas">
+        <div class="cards">
+          <div class="iconos">
+            <img src="Img/comida.svg" class="asador" alt="esto es un asador " />
+          </div>
+          <div class="info">
+            <h2>Envios rápidos</h2>
+            <p class="cortes">
+              Contamos con envios a todo el pais. Nos asegurmos de que recibas
+              tu corte de carne en perfecatas condiciones. Támbien se les ofrece
+              un regalo a aquellos clientes que compren más de 10 cortes en el
+              año ofrecemos el cualquier corte de carne que quieras.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <video id="video" src=""></video>
+  </body>
 </html>

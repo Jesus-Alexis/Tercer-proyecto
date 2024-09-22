@@ -1,11 +1,17 @@
 *{
     box-sizing: border-box;
+    margin: 5px;
 }
-  
+
  @media(max-width:650px){
      #nav-bar > ul{
        flex-direction: column;  
        text-align: center;
+    }
+}
+@media(max-width:650px){
+    #nav-bar li{
+        padding-bottom: 5px;
     }
 }
 
@@ -17,11 +23,20 @@
     text-align: center;
 }
 
+li{
+    display: list-item;
+    text-align: center;
+    unicode-bidi: isolate;
+    list-style: none;
+}
+
 
 .formulario input[type='email']{
  max-width: 250px;
  width: 100%;
- padding: 10px
+ padding: 10px;
+ align-items: center;
+ justify-content: center;
 }
 
 .formulario input[type='submit']{
@@ -30,7 +45,20 @@
     height: 30px;
     margin: 15px 0;
     border: 0;
-    background-color:#f1690fcc ;
+    background-color:#f1690fcc;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-link a:visited{
+    color: #000;
+}
+
+.nav-link a:hover{
+    color: #f1690fcc;
 }
 
 input{
@@ -42,11 +70,20 @@ input{
 .formulario{
  display: flex;
  flex-direction: column;
- align-items: center;
- justify-content: center;
+ align-items:center;
+ justify-content:center;
  text-align: center;
  height: 100px;
  margin-top: 30px;
+}
+
+.especificaciones{
+    margin: 30px;
+}
+
+.subtitulo{
+  margin: 0px;
+  height: 100%;
 }
 
 .logo{
@@ -94,12 +131,23 @@ h2{
 
  .asador{
     width: 100px;
-    height: 100px;
+    height: 100px; 
  } 
 
+ .cortes:hover{
+    font-size:20px;
+    cursor:default;
+ }
+
+ 
 
 .cards{
     display: flex;
+}
+
+
+.tipos{
+font-size:20px;
 }
 
 
